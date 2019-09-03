@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95249a5f-1e1c-4eec-bc33-3bbc4cbea49b" name="Default Changelist" comment="" />
+    <list default="true" id="95249a5f-1e1c-4eec-bc33-3bbc4cbea49b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/pages/ActivitiesStream/ActivityStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/pages/homepage/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/pages/loginPage/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/step_definitions/CreateTasksFromActivityStream_Step_Definition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/step_definitions/Hook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/step_definitions/Login_Step_Definition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resoucers/features/CreateTasks.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Btrix24/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Btrix24/utilities/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Btrix24/utilities/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resoucers/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resoucers/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/Btrix24/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Btrix24/runners/CukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/Btrix24/utilities/Pages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Btrix24/utilities/Pages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/login.feature" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +42,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1QGQsNDijYSB1qDAAzBFfmlTJH9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bahti\OneDrive\Documents\BTRIX24_Application_New\src\test\resoucers\features" />
+      <recent name="C:\Users\bahti\OneDrive\Documents\BTRIX24_Application_New\src\test\resoucers\features\ActivitiesStream" />
+      <recent name="C:\Users\bahti\OneDrive\Documents\BTRIX24_Application_New\src\test\resoucers\features\Login" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -75,5 +99,18 @@
       <updated>1567394658410</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

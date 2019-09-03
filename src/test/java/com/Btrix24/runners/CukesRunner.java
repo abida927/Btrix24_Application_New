@@ -16,17 +16,16 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports",
                 "rerun:target/rerun.txt"
         },
-        //tags = {"@negative or @storemanager"},
-        features = {"src\\test\\resoucers\\features\\login.feature" //to specify where are the features
-        },
+        tags = {"@helpdesk"},
+        features = {"src\\test\\resoucers\\features\\login.feature"},
+        //to specify where are the features
         //feature contains scenarios
         //every scenario is like a test
         //where is the implementation for features
-        glue = {"com\\Btrix24\\step_Definitions"},
+        glue = {"src\\test\\java\\com\\Btrix24\\step_definitions\\Login_Step_Definition"},
         //dry run - to generate step definitions automatically
         //you will see them in the console output
-        dryRun = true
-
+        dryRun = false
 )
 public class CukesRunner {
 
