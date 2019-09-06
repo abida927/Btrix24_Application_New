@@ -486,5 +486,11 @@ public class BrowserUtils {
                 until(ExpectedConditions.stalenessOf(Driver.getDriver().findElement(by)));
     }
 
+    public static void waitForFrameAndSwitchToIt(WebElement frame){
+        new WebDriverWait(Driver.getDriver(), Integer.valueOf(ConfigurationReader.getProperty("SHORT_WAIT"))).
+                until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frame));
+    }
+
+
 
 }

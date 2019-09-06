@@ -3,11 +3,12 @@ package com.Btrix24.utilities;
 
 import com.Btrix24.pages.ActivitiesStream.ActivityStream;
 import com.Btrix24.pages.loginPage.LoginPage;
+import com.Btrix24.pages.sidemodule.SideModule;
 
 public class Pages {
     private LoginPage loginPage;
     private ActivityStream activityStream;
-//    private Modules modules;
+    private SideModule modules;
 //    private Tasks tasks;
 
 
@@ -30,12 +31,12 @@ public class Pages {
 //
 //
 //
-//    public Modules modules() {
-//        if (modules == null) {
-//            modules = new Modules();
-//        }
-//        return modules;
-//    }
+    public SideModule modules() {
+        if (modules == null) {
+            modules = new SideModule();
+        }
+        return modules;
+    }
 //
 //    public Tasks tasks() {
 //        if (tasks == null) {

@@ -59,6 +59,23 @@ public abstract class BasePage {
         }
     }
 
+    public void navigateToModule( String module) {
+        String moduleLocator = "[class='menu-item-link'][title='" + module + "']";
+
+        try {
+            BrowserUtils.waitForPresenceOfElement(By.cssSelector(moduleLocator), Integer.parseInt(ConfigurationReader.getProperty("SHORT_WAIT")));
+            BrowserUtils.waitForVisibility(By.cssSelector(moduleLocator), Integer.parseInt(ConfigurationReader.getProperty("SHORT_WAIT")));
+            BrowserUtils.scrollToElement(Driver.getDriver().findElement(By.cssSelector(moduleLocator)));
+            Driver.getDriver().findElement(By.cssSelector(moduleLocator)).click();
+        } catch (Exception e) {
+            logger.error("Failed to click on :: "+module);
+            logger.error(e);
+            BrowserUtils.waitForStaleElement(Driver.getDriver().findElement(By.cssSelector(moduleLocator)));
+            BrowserUtils.clickWithTimeOut(Driver.getDriver().findElement(By.cssSelector(moduleLocator)),  Integer.parseInt(ConfigurationReader.getProperty("SHORT_WAIT")));
+        }
+    }
+
+
     /**
      * This method will navigate user to the specific module in vytrack application.
      * For example: if tab is equals to Activities, and module equals to Calls,
