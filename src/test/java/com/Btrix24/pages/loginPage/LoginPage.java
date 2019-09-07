@@ -40,22 +40,21 @@ public class LoginPage extends Pages {
 
 //**********************************************login with Credentials methods
 
-    List<Map<String, String>> credentialData;
+//    List<Map<String, String>> credentialData;
 
     public void getCredentialData() {
-        ExcelUtil excelUtil = new ExcelUtil("C:\\Users\\bahti\\OneDrive\\Documents\\BTRIX24_Application_New\\src\\test\\resoucers\\LoginCredentials.xlsx", "credentials");
-
-        credentialData = excelUtil.getDataList();
+//        ExcelUtil excelUtil = new ExcelUtil("C:\\Users\\bahti\\OneDrive\\Documents\\BTRIX24_Application_New\\src\\test\\resoucers\\LoginCredentials.xlsx", "credentials");
+//
+//        credentialData = excelUtil.getDataList();
 
     }
 
     public void loginWithCredentialDataTest() {
 
-        for (Map<String,String> credential : credentialData){
-            usernameInput.sendKeys(credential.get("UserName"));
-            passwordInput.sendKeys(credential.get("Password"));
-
-            loginBtn.click();
-        }
+//        for (Map<String,String> credential : credentialData){
+//            usernameInput.sendKeys(credential.get("UserName"));
+//            passwordInput.sendKeys(credential.get("Password"));
+//            loginBtn.click();
+//        }
     }
 }
