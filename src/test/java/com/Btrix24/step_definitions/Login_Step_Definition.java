@@ -47,22 +47,31 @@ public class Login_Step_Definition  {
 
         List<Map<String, String>> credentialData;
 
-        ExcelUtil excelUtil = new ExcelUtil("C:\\Users\\bahti\\OneDrive\\Documents\\BTRIX24_Application_New\\src\\test\\resoucers\\LoginCredentials.xlsx", "credentials");
+        ExcelUtil excelUtil = new ExcelUtil("C:\\Users\\bahti\\OneDrive\\Documents\\BTRIX24_Application_New\\src\\test\\resourses\\LoginCredentials.xlsx", "credentials");
 
         credentialData = excelUtil.getDataList();
         for (Map<String,String> credential : credentialData){
             pages.loginPage().usernameInput.sendKeys(credential.get("UserName"));
             pages.loginPage().passwordInput.sendKeys(credential.get("Password"));
             pages.loginPage().loginBtn.click();
+            BrowserUtils.waitForVisibility(pages.homePage().homePageUserName,3);
+            pages.homePage().homePageUserName.click();
+            String actualTitle = Driver.getDriver().getTitle();
+            Assert.assertEquals("Portal",actualTitle);
+            BrowserUtils.waitForVisibility(pages.homePage().logOutBtn,2);
+            pages.homePage().logOutBtn.click();
         }
     }
 
-    @Then("homepage title should be {string}")
-    public void homepage_title_should_be(String title) {
+//    @Then("homepage title should be {string}")
+//    public void homepage_title_should_be(String expectedTitle) {
+//
+//        BrowserUtils.waitForVisibility(pages.homePage().homePageUserName,3);
+//        pages.homePage().homePageUserName.click();
+//        String actualTitle = Driver.getDriver().getTitle();
+//        Assert.assertEquals(expectedTitle,actualTitle);
+//        BrowserUtils.waitForVisibility(pages.homePage().logOutBtn,2);
+//        pages.homePage().logOutBtn.click();
 
-        title = Driver.getDriver().getTitle();
-        Assert.assertEquals(title,"Portal");
-        Driver.getDriver().close();
-
-    }
+  //  }
 }

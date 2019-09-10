@@ -30,4 +30,4 @@ Feature: Login
     @excelData
     Scenario: login with excel sheet credentials
       When user login with credentials
-      Then homepage title should be "Portal"
+#      Then homepage title should be "Portal"

@@ -2,6 +2,7 @@ package com.Btrix24.utilities;
 
 
 import com.Btrix24.pages.ActivitiesStream.ActivityStream;
+import com.Btrix24.pages.homepage.HomePage;
 import com.Btrix24.pages.loginPage.LoginPage;
 import com.Btrix24.pages.sidemodule.SideModule;
 
@@ -9,7 +10,7 @@ public class Pages {
     private LoginPage loginPage;
     private ActivityStream activityStream;
     private SideModule modules;
-//    private Tasks tasks;
+    private HomePage homePage;
 
 
     public LoginPage loginPage() {
@@ -37,13 +38,13 @@ public class Pages {
         }
         return modules;
     }
-//
-//    public Tasks tasks() {
-//        if (tasks == null) {
-//            tasks = new Tasks();
-//        }
-//        return tasks;
-//    }
+
+    public HomePage homePage() {
+        if (homePage() == null) {
+            homePage = new HomePage();
+        }
+        return homePage();
+    }
 
 
 }

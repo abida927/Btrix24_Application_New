@@ -27,6 +27,12 @@ public class HomePage extends Pages {
     @FindBy(css = "[class='logo-text']")
     public WebElement homePageLogo;
 
+    @FindBy(css = "[id='user-block'] >[id='user-name']")
+    public  WebElement homePageUserName;
+
+    @FindBy(xpath = "//div[@class='menu-popup-items'] //a[3]")
+    public  WebElement logOutBtn;
+
 
 
 

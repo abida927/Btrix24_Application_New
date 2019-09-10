@@ -12,13 +12,15 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports",
                 "rerun:target/rerun.txt"
         },
-        tags = {"@Tasks"},
-        features = {"src/test/resoucers/features/CreateTasks.feature"},//"src/test/resources/features"
+        tags = {"@hr"},
+        features = {"src\\test\\resourses\\features\\login.feature"},//"src/test/resources/features"
         //to specify where are the features
         //feature contains scenarios
         //every scenario is like a test
         //where is the implementation for features
         glue = {"com/Btrix24/step_definitions"},  //"com/vytrack/step_definitions"
+
+        //src\test\java\com\Btrix24\step_definitions
         //dry run - to generate step definitions automatically
         //you will see them in the console output
         dryRun = false
