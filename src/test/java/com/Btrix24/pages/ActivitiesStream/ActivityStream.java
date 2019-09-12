@@ -1,9 +1,6 @@
 package com.Btrix24.pages.ActivitiesStream;
 
-import com.Btrix24.utilities.BrowserUtils;
-import com.Btrix24.utilities.ConfigurationReader;
-import com.Btrix24.utilities.Driver;
-import com.Btrix24.utilities.Pages;
+import com.Btrix24.utilities.*;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import javax.swing.*;
 import java.io.IOException;
 
-public class ActivityStream extends Pages {
+public class ActivityStream extends BasePage {
 
     WebDriver driver = Driver.getDriver();
     //Action action = new Action(driver);

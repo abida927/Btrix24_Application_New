@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import static com.Btrix24.utilities.BrowserUtils.waitForVisibility;
 
-public class HomePage extends Pages {
+public class HomePage extends BasePage {
 
 
     public HomePage(){

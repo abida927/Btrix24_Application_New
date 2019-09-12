@@ -63,12 +63,12 @@
       <module name="BTRIX24_Application_New" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Btrix24.Runners.*" />
+          <option name="PATTERN" value="com.Btrix24.Runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.Btrix24.Runners" />
-      <option name="MAIN_CLASS_NAME" value="com.Btrix24.Runners.CukesRunner" />
+      <option name="PACKAGE_NAME" value="com.Btrix24.Runner" />
+      <option name="MAIN_CLASS_NAME" value="com.Btrix24.Runner.CukesRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 import java.util.Map;
 
-public class LoginPage extends Pages {
+public class LoginPage extends BasePage {
 
 
     public LoginPage() {
