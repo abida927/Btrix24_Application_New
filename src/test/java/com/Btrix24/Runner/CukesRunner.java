@@ -1,4 +1,4 @@
-package com.Btrix24.runners;
+package com.Btrix24.Runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
